@@ -1,0 +1,28 @@
+Importing NPM Modules:
+
+When we installed node we also got the NPM program installed. Now before we can actually use any of these modules in our script we have to take two very important steps.
+
+First up let's initialize NPM in our project which means we have to run a single command from the project root. So make sure you're running commands from there.
+
+Step:1 Command to check the node version
+
+cmd: node -v
+
+Step:2 Command to check the npm version
+
+cmd: npm -v
+
+Step:3 Command to initialize the npm 
+cmd: npm init
+
+Now it has a lot of information telling us exactly what's happening in the end of the day what's really going on is that NPM is asking us for some information to populate various fields in this configuration file.
+
+Now we can type out custom answers. So for example the first piece of information it wants is just a name for our package. So some sort of name for this project.
+
+We can choose to use that by just hitting enter or we could type something custom to override that value for every single question it asks. We can hit enter on that last one and it's asking us if things are OK now what exactly is it doing well it tells us it's about to write a package.json File to the notes app directory down below.
+
+If this is the exact contents it's about to write to that file. Everything looks good. We can type yes to confirm that we want NPM in it to actually create that file and now we have a brand new file in our project route. If I crack it open we can see that has NPM promised. It looks exactly like what we had output it in the terminal down below. The extension for this file is .json which stands for a javascript object notation and as you can see it looks a bit like a javascript object.
+
+Now this file is gonna be used to manage all of the dependencies that our application needs to run.
+
+
