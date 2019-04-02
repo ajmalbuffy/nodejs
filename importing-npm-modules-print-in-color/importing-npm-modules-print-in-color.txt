@@ -1,0 +1,23 @@
+Node Modules Directory
+
+The directory that NPM created. This is a generated directory. So that means that NPM generates it. And it's not something we should be manually editing because when we use the NPM command again our edits are going to get over written.
+
+You can actually recreate this directory from scratch using NPM based off of the contents of package.json and package-lock.json.
+
+So if we were to download a zip for this course or you were to grab the code from the git hub repository which contains all of the course code you'll notice that the node modules directory is nowhere to be found.
+
+So let's experiment with this by actually deleting it from our local project. I'm going to remove that folder and this is exactly what you would see if you grab the lecturer zip for the last lesson. It's the same files but with no node modules directory. Now the node modules directory is necessary for our app to run when we require an NPM library. It's going to look in that node modules folder for the application code. So if I were to run app.js. Right now it would fail.
+
+Let's do it just to see. So node app.js. I'm gonna go ahead and run this command and what do we get. We get a nice error message right here.
+
+Error can not find module validator. So it's complaining that we're using this module but it's unable to locate it. So clearly we do need the contents of that node modules folder.
+
+The answer is how do we get it back. All we have to do is run npm install. We're not going to provide any specific packages afterwards. This is the exact command.
+
+cmd: npm imstall
+
+When we do this it's going to look at the contents of package-lock.json and package.json to determine which dependencies and which versions our application is using. It's then going to recreate that node modules folder from scratch based off of just the contents of these two text files.
+
+So for larger applications the node modules folder can get really really big. So you might want to delete it if you were to share the code with a friend or if you were to add it to your own GitHub repository.
+
+You can always get that folder back when you download the project by running npm install.
